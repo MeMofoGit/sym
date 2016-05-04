@@ -1,0 +1,28 @@
+usuarios_homepage:
+    path:     /hola/{nombre}
+    defaults: { _controller: UsuariosBundle:Default:index }
+
+usuarios_index:
+    path:       /user/index
+    defaults:   { _controller: UsuariosBundle:User:index }
+
+# usuarios_articles:
+#     path:       /user/articles/{page}
+#     defaults:   { _controller: UsuariosBundle:User:articles, page: 1 }
+#     requirements:
+#         page: \d+
+usuarios_add:
+    path:       /user/add
+    defaults:   { _controller: UsuariosBundle:User:add }
+    
+usuarios_edit:
+    path:       /user/edit/{id}
+    defaults:   { _controller: UsuariosBundle:User:edit }
+    
+usuarios_view:
+    path:       /user/view/{id}
+    defaults:   { _controller: UsuariosBundle:User:view }
+    
+usuarios_delete:
+    path:       /user/delete/{id}
+    defaults:   { _controller: UsuariosBundle:User:delete }
